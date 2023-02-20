@@ -1,0 +1,20 @@
+{
+  "name": "boas-praticas-em-automacao-de-testes-com-cypress",
+  "version": "1.0.0",
+  "description": "Repositório da versão 2 do curso de boas práticas com Cypress da Escola Talking About Testing no Udemy",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "cypress.io",
+    "talking about testing",
+    "good practices"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.8.1"
+  }
+}

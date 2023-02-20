@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Sugestão de Refeição Vegana</title>
+</head>
+<body>
+  <h1>Refeição vegana 🌱</h1>
+  <div id="filter-container">
+    <label>Tipo:</label>
+    <select id="meal-type-filter">
+      <option value="all">Todos</option>
+      <option value="salad">Saladas</option>
+      <option value="soup">Sopas</option>
+      <option value="sandwich">Sanduíches</option>
+      <option value="hot">Pratos quentes</option>
+    </select>
+  </div>
+  <div id="search-container">
+    <label>Busca:</label>
+    <input type="text" id="search-field" data-test-id="search-field" placeholder="Ex.: Arroz e feijão">
+    <button type="submit" data-test-id="search-button">></button>
+  </div>
+  <div id="loading">
+    <p>Loading...</p>
+  </div>
+  <div id="meal-container">
+    <h2 id="meal-name"></h2>
+    <h3 id="ingredients-label"></h3>
+    <ul id="ingredients-list"></ul>
+  </div>
+  <div>
+    <button id="generate-meal-button">Outra sugestão</button>
+  </div>
+  <script type="application/javascript" src="meals.js"></script>
+  <script type="application/javascript" src="script.js"></script>
+</body>
+</html>

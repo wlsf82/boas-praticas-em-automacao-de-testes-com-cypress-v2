@@ -1,0 +1,57 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fef6e4;
+  color: #001858;
+  margin-left: 6px;
+}
+#loading {
+  display: none;
+}
+label {
+  font-weight: bold;
+}
+select {
+  border: 2px solid #001858;
+  border-radius: 4px;
+  margin-left: 21px;
+  height: 1.5rem;
+}
+#search-container {
+  margin-top: 12px;
+}
+#search-container input[type="text"] {
+  width: 180px;
+  border: 2px solid #001858;
+  border-radius: 4px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f582ae;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #f582ae;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #f582ae;
+}
+h1 {
+  color: #f582ae;
+}
+button {
+  padding: 4px 8px;
+  background-color: #f582ae;
+  border-radius: 8px;
+  border: 2px solid #001858;
+}
+#generate-meal-button {
+  font-size: large;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  #generate-meal-button {
+    margin: 0 auto;
+    display: block;
+  }
+}
