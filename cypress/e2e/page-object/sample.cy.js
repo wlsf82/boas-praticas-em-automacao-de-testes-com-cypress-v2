@@ -1,7 +1,5 @@
 import { faker } from '@faker-js/faker'
 
-const editDestinationPage = require('../../page-objects/editDestination')
-
 describe('Page Object bad practice', () => {
   const randomDestination = Math.floor(Math.random() * 15) + 1
 
@@ -15,7 +13,7 @@ describe('Page Object bad practice', () => {
       description: faker.random.words(5)
     }
 
-    editDestinationPage.updateInfo(info)
+    cy.updateDestination(info)
 
     cy.url()
       .should(

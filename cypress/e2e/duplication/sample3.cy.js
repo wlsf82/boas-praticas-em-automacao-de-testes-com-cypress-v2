@@ -10,22 +10,12 @@ describe('Code duplication bad practice - repetitive actions and assertions', ()
   })
 
   it('searches for the same term 3 times', () => {
-    cy.search('cypress.io')
+    Cypress._.times(3, () => {
+      cy.search('cypress.io')
 
-    cy.get('.table-row')
-      .its('length')
-      .should('be.at.least', 1)
-
-    cy.search('cypress.io')
-
-    cy.get('.table-row')
-      .its('length')
-      .should('be.at.least', 1)
-
-    cy.search('cypress.io')
-
-    cy.get('.table-row')
-      .its('length')
-      .should('be.at.least', 1)
+      cy.get('.table-row')
+        .its('length')
+        .should('be.at.least', 1)
+    })
   })
 })
